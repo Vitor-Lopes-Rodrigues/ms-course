@@ -1,8 +1,8 @@
 package com.cenpros.demo.hrworker.entities;
 
+/*Imports*/
 import java.io.Serializable;
 import java.util.Objects;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,8 +10,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
+/*Comeco do codigo*/
 @Entity
-@Table(name = "tb_worker")
+@Table(name = "tb_worker") /*JPA table*/
 public class Worker implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
@@ -24,6 +25,7 @@ public class Worker implements Serializable {
 	public Worker() {
 	}
 
+	/*Getters e Setters*/
 	public Worker(Long id, String name, Double dailyIncome) {
 		super();
 		this.id = id;

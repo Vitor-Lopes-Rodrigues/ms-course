@@ -1,17 +1,18 @@
 package com.cenpros.demo.hrworker.resources;
 
+/*Imports java*/
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+/*Imports classes*/
 import com.cenpros.demo.hrworker.entities.Worker;
 import com.cenpros.demo.hrworker.repositories.WorkerRepository;
 
+/*Inicio do codigo */
 @RestController
 @RequestMapping(value = "workers")
 public class WorkerResource {
